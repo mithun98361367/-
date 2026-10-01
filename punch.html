@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Punch In/Out - Ticket System</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+
+<div class="logo">
+    📍 Attendance
+</div>
+
+<nav class="desktop-nav">
+
+    <a href="index.html">Home</a>
+
+    <a href="engineer.html">Engineer</a>
+
+    <a class="active"
+       href="punch.html">
+        Punch In/Out
+    </a>
+
+    <a href="admin.html">Admin</a>
+
+    <a href="search.html">Search</a>
+
+</nav>
+
+<button class="mobile-menu-btn"
+        onclick="toggleMobileMenu()">
+    ☰
+</button>
+
+
+</header>
+
+<nav id="mobileNav" class="mobile-nav">
+
+
+<a href="index.html">🏠 Home</a>
+<a href="engineer.html">👨‍🔧 Engineer</a>
+<a href="punch.html">📍 Punch In/Out</a>
+<a href="admin.html">📊 Admin</a>
+<a href="search.html">🔍 Search</a>
+
+
+</nav>
+
+<main class="container">
+
+
+<h1 class="page-title">
+    Punch In / Out
+</h1>
+
+<p class="page-subtitle">
+    Record attendance with device location
+</p>
+
+
+<div class="card">
+
+    <h2>
+        Engineer Attendance
+    </h2>
+
+
+    <div class="form-group">
+
+        <label>
+            Engineer ID
+        </label>
+
+        <input
+            type="text"
+            placeholder="ENG-001">
+
+    </div>
+
+
+    <div
+        id="locationStatus"
+        class="location-box">
+
+        📍 Location not checked
+
+    </div>
+
+
+    <button
+        class="btn btn-green btn-full"
+        onclick="getLocation('Punch In')">
+
+        🟢 Punch In
+
+    </button>
+
+
+    <button
+        class="btn btn-red btn-full"
+        style="margin-top:10px;"
+        onclick="getLocation('Punch Out')">
+
+        🔴 Punch Out
+
+    </button>
+
+</div>
+
+
+</main>
+
+<footer class="footer">
+    © 2026 Ticket System
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

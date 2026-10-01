@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Search - Ticket System</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+
+<div class="logo">
+    🔍 Search
+</div>
+
+<nav class="desktop-nav">
+
+    <a href="index.html">Home</a>
+    <a href="engineer.html">Engineer</a>
+    <a href="punch.html">Punch In/Out</a>
+    <a href="admin.html">Admin</a>
+
+    <a class="active"
+       href="search.html">
+        Search
+    </a>
+
+</nav>
+
+<button class="mobile-menu-btn"
+        onclick="toggleMobileMenu()">
+    ☰
+</button>
+
+
+</header>
+
+<nav id="mobileNav" class="mobile-nav">
+
+
+<a href="index.html">🏠 Home</a>
+<a href="engineer.html">👨‍🔧 Engineer</a>
+<a href="punch.html">📍 Punch In/Out</a>
+<a href="admin.html">📊 Admin</a>
+<a href="search.html">🔍 Search</a>
+
+
+</nav>
+
+<main class="container">
+
+
+<h1 class="page-title">
+    Search Ticket
+</h1>
+
+<p class="page-subtitle">
+    Search using Ticket Number
+</p>
+
+
+<div class="card">
+
+    <div class="search-row">
+
+        <input
+            type="text"
+            id="ticketSearch"
+            placeholder="Example: HPCL-918392">
+
+        <button
+            class="btn"
+            onclick="searchTicket()">
+
+            🔍 Search
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="searchResult"
+     style="margin-top:20px;">
+</div>
+
+
+</main>
+
+<footer class="footer">
+    © 2026 Ticket System
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

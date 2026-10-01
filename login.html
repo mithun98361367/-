@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Login - Ticket System</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+
+<div class="logo">
+    🎫 Ticket System
+</div>
+
+
+</header>
+
+<main class="login-page">
+
+
+<div class="login-card">
+
+    <div class="login-logo">
+        🔐
+    </div>
+
+    <h1 class="login-title">
+        Sign In
+    </h1>
+
+    <p class="page-subtitle"
+       style="text-align:center;">
+        Access your account
+    </p>
+
+    <div id="globalMessage"
+         class="message">
+    </div>
+
+
+    <form onsubmit="return loginUser(event)">
+
+        <div class="form-group">
+
+            <label>
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                autocomplete="username">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                autocomplete="current-password">
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn btn-full">
+
+            🔑 Sign In
+
+        </button>
+
+    </form>
+
+</div>
+
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Engineer - Ticket System</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+    👨‍🔧 Engineer Portal
+</div>
+
+<nav class="desktop-nav">
+
+    <a href="index.html">Home</a>
+
+    <a class="active"
+       href="engineer.html">
+        Engineer
+    </a>
+
+    <a href="punch.html">
+        Punch In/Out
+    </a>
+
+    <a href="admin.html">
+        Admin
+    </a>
+
+    <a href="search.html">
+        Search
+    </a>
+
+</nav>
+
+<button class="mobile-menu-btn"
+        onclick="toggleMobileMenu()">
+    ☰
+</button>
+
+
+</header>
+
+<nav id="mobileNav" class="mobile-nav">
+
+
+<a href="index.html">🏠 Home</a>
+
+<a href="engineer.html">👨‍🔧 Engineer</a>
+
+<a href="punch.html">📍 Punch In/Out</a>
+
+<a href="admin.html">📊 Admin</a>
+
+<a href="search.html">🔍 Search</a>
+
+
+</nav>
+
+<main class="container">
+
+
+<h1 class="page-title">
+    Engineer
+</h1>
+
+<p class="page-subtitle">
+    Engineer information and assigned tickets
+</p>
+
+
+<div class="card">
+
+    <h2>Engineer Details</h2>
+
+    <div class="form-group">
+
+        <label>
+            Engineer Name
+        </label>
+
+        <input
+            type="text"
+            placeholder="Enter engineer name">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Engineer ID
+        </label>
+
+        <input
+            type="text"
+            placeholder="ENG-001">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Ticket No
+        </label>
+
+        <input
+            type="text"
+            placeholder="HPCL-123456">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Remarks
+        </label>
+
+        <textarea
+            placeholder="Enter remarks"></textarea>
+
+    </div>
+
+
+    <button class="btn">
+        💾 Save
+    </button>
+
+</div>
+
+
+<div class="card"
+     style="margin-top:20px;">
+
+    <h2>
+        Assigned Tickets
+    </h2>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Ticket No</th>
+                    <th>Customer</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>HPCL-918392</td>
+
+                    <td>Customer A</td>
+
+                    <td>Kolkata</td>
+
+                    <td>
+                        <span class="status status-open">
+                            Open
+                        </span>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>SIDBI-919595</td>
+
+                    <td>Customer B</td>
+
+                    <td>Howrah</td>
+
+                    <td>
+                        <span class="status status-pending">
+                            Pending
+                        </span>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+</main>
+
+<footer class="footer">
+    © 2026 Ticket System
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
